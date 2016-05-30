@@ -14,7 +14,10 @@ official [OpenShift Documentation](https://docs.openshift.org/latest/using_image
 Versions
 ---------------
 Node.JS versions currently provided are:
+
+* nodejs-0.10
 * nodejs-4
+* nodejs 6.2.0 (CentOS7 only)
 
 RHEL versions currently supported are:
 * RHEL7
@@ -110,5 +113,4 @@ Image name structure
 2. Platform version(without dots) - 4
 3. Base builder image - centos7/rhel7
 
-Examples: `centos/nodejs-4-centos7`, `rhscl/nodejs-4-rhel7`
-
+Examples: `openshift/nodejs-010-centos7`, `openshift/nodejs-010-rhel7`
