@@ -17,7 +17,7 @@ Node.JS versions currently provided are:
 
 * nodejs-0.10
 * nodejs-4
-* nodejs 6.2.0 (CentOS7 only)
+* nodejs 6 (RHEL7 untested)
 
 RHEL versions currently supported are:
 * RHEL7
