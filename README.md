@@ -59,6 +59,9 @@ To build a Node.JS image, choose either the CentOS or RHEL based image:
 **Notice: By omitting the `VERSION` parameter, the build/test action will be performed
 on all provided versions of Node.JS.**
 
+*  **Creating ImageStreams**
+
+`oc create -f imagestreams-centos.yaml`
 
 Usage
 ---------------------------------

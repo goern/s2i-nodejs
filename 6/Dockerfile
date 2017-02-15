@@ -23,8 +23,8 @@ LABEL io.k8s.description="Platform for building and running Node.js 6 applicatio
       com.redhat.deployments-dir="/opt/app-root/src" \
       com.redhat.dev-mode.port="DEBUG_PORT:5858"
 
-RUN INSTALL_PKGS="bzip2 nss_wrapper" && \
-    yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS && \
+RUN INSTALL_PKGS="bzip2" && \
+    yum update -y --setopt=tsflags=nodocs $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
     yum install -y --setopt=tsflags=nodocs https://rpm.nodesource.com/pub_6.x/el/7/x86_64/nodejs-6.9.5-1nodesource.el7.centos.x86_64.rpm && \
     yum clean all -y
