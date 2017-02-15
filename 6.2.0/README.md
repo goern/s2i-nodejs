@@ -22,7 +22,7 @@ resulting image with [Docker](http://docker.io) execute:
 
 *  **For CentOS based image**
     ```
-    $ s2i build https://github.com/openshift/s2i-nodejs.git --context-dir=6.2.0/test/test-app/ openshift/nodejs-010-centos7 nodejs-sample-app
+    $ s2i build https://github.com/goern/s2i-nodejs.git --context-dir=6.2.0/test/test-app/ goern/nodejs-620-centos7 nodejs-sample-app
     $ docker run -p 8080:8080 nodejs-sample-app
     ```
 
